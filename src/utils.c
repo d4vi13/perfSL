@@ -38,3 +38,33 @@ string_t markerName(string_t baseName, int n)
 
 }
 
+
+double* find_column_max(plinear_system ls, int pivot){
+    int i;
+    double max_ptr, max, *aux;
+    max = ls->coeficientes[pivot][pivot];
+    max_ptr = ls->coeficientes[pivot]
+    
+    for(i = pivot + 1; i < ls->ordem; i++)
+        if(max < ls->coeficientes[i][pivot]){
+            max = ls->coeficientes[pivot][pivot];
+            max_ptr = ls->coeficientes[pivot]
+        }
+
+    
+    aux = ls->coeficientes[pivot];
+    ls->coeficientes[pivot] = max_ptr;
+    ls->coeficientes[i] = aux;
+
+    return;
+} 
+
+void make_it_pivot(plinear_system ls, int pivot_index ,double* new_pivot){
+    double* aux = ls->coeficientes[pivot_index];
+    ls->coeficientes[pivot] = new_pivot;
+    ls
+    
+
+    
+
+}
